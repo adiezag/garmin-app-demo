@@ -1,0 +1,48 @@
+<!-- <layout id="MainLayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <label x="center" y="100" text="@Strings.prompt" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <bitmap id="id_monkey" x="center" y="30" filename="../drawables/monkey.png" />
+</layout> -->
+<layout id="MainLayout">
+    <label
+    id="time_of_the_day"
+    text="00:00"
+    x="center"
+    y="10%"
+    font="Gfx.FONT_XTINY"
+    justification="Gfx.TEXT_JUSTIFY_CENTER"
+    />
+    <label
+        id="type_title"
+        text="COLD"
+        x="center"
+        y="20%"
+        font="Gfx.FONT_MEDIUM"
+        justification="Gfx.TEXT_JUSTIFY_CENTER"
+    />
+    <label
+        id="current_timer"
+        text="0:30"
+        x="center"
+        y="center"
+        font="Gfx.FONT_NUMBER_THAI_HOT"
+        justification="Gfx.TEXT_JUSTIFY_CENTER"
+    />
+    <label
+        id="cylcles_left"
+        text="5 cycles left"
+        x="center"
+        y="70%"
+        font="Gfx.FONT_SMALL"
+        justification="Gfx.TEXT_JUSTIFY_CENTER"
+    />
+    <!-- <bitmap id="heart_rate_icon" x="7%" y="53%" filename="../drawables/heart-rate.png"></bitmap> -->
+
+    <label
+        id="heart_rate"
+        text="--"
+        x="11%"
+        y="40%"
+        font="Gfx.FONT_SMALL"
+        justification="Gfx.TEXT_JUSTIFY_CENTER"
+    />
+</layout>
