@@ -4,10 +4,10 @@
     <string id="prompt">Click the menu button</string>
     <string id="menu_app">New app</string>
 
-    <string id="menu_label_1">Item 1</string>
+    <!-- <string id="menu_label_1">Item 1</string>
     <string id="menu_label_2">Item 2</string>
     <string id="menu_label_3">Item 3</string>
     <string id="menu_label_4">Item 4</string>
-    <string id="menu_label_5">Item 5</string>
+    <string id="menu_label_5">Item 5</string> -->
     
 </strings>
