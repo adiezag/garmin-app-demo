@@ -1,0 +1,23 @@
+[ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/enums/WaterType.mc"; @line = 1; @symbol_classdef = [WaterType,1,6,15]; ]
+class WaterType {
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/enums/WaterType.mc"; @line = 1; ]
+    <init> {
+    }
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/enums/WaterType.mc"; @line = 1; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/enums/WaterType.mc"; @line = 2; ]
+    static
+    enum {
+        [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/enums/WaterType.mc"; @line = 3; @position = 8; @symbol_enumdec = [Cold,3,8,12]; ]
+        Cold,
+        [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/enums/WaterType.mc"; @line = 4; @position = 8; @symbol_enumdec = [Hot,4,8,11]; ]
+        Hot,
+        [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/enums/WaterType.mc"; @line = 5; @position = 8; @symbol_enumdec = [Switch,5,8,14]; ]
+        Switch
+    }
+}
+[ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/enums/WaterType.mc"; @line = 1; ]
+<init> {
+}

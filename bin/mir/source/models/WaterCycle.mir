@@ -1,0 +1,32 @@
+[ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/models/WaterCycle.mc"; @line = 1; @symbol_classdef = [WaterCycle,1,6,16]; ]
+class WaterCycle {
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/models/WaterCycle.mc"; @line = 1; ]
+    <init> {
+    }
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/models/WaterCycle.mc"; @line = 1; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/models/WaterCycle.mc"; @line = 2; @position = 8; @symbol_vardef = [waterType,2,8,17]; @symbol_type<0> = [WaterType,2,21,30]; ]
+    var waterType as WaterType;
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/models/WaterCycle.mc"; @line = 3; @position = 8; @symbol_vardef = [duration,3,8,16]; ]
+    var duration;
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/models/WaterCycle.mc"; @line = 5; @symbol_functiondef = [initialize,5,13,23]; @symbol_param<0> = [cWaterType,5,24,34]; @symbol_param<1> = [cDuration,5,36,45]; ]
+    function initialize(cWaterType, cDuration) as Void {
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_models_WaterCycle_mc_5_47_8_4_start:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/models/WaterCycle.mc" 6 8 ]
+        %tmp.1 = lgetv %cWaterType;
+        symbol [ cWaterType %tmp.1 6 20 30 ];
+        symbol [ waterType ? 6 8 17 ];
+        putv self :waterType %tmp.1;
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/models/WaterCycle.mc" 7 8 ]
+        %tmp.2 = lgetv %cDuration;
+        symbol [ cDuration %tmp.2 7 19 28 ];
+        symbol [ duration ? 7 8 16 ];
+        putv self :duration %tmp.2;
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_models_WaterCycle_mc_5_47_8_4_stop:
+    }
+}
+[ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/models/WaterCycle.mc"; @line = 1; ]
+<init> {
+}

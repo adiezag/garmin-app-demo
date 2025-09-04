@@ -1,0 +1,280 @@
+[ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; ]
+import Toybox.Application;
+[ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc"; @line = 3; @symbol_classdef = [CyclesManager,3,6,19]; ]
+class CyclesManager {
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc"; @line = 6; @symbol_functiondef = [getCycleByIndex,6,20,35]; @symbol_param<0> = [index,6,36,41]; ]
+    static
+    function getCycleByIndex(index) {
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_6_43_19_4_start:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 7 8 ]
+        [ "_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_6_43_19_4_start" "_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_6_43_19_4_stop" ]
+        %waterType.1 = local;
+        symbol [ waterType %waterType.1 7 12 21 ];
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 8 8 ]
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_8_8_14_8_if_stmt:
+        %tmp.1 = lgetv %index;
+        symbol [ index %tmp.1 8 12 17 ];
+        %tmp.2 = 4;
+        %tmp.3 = mod %tmp.1 %tmp.2;
+        %tmp.4 = 0;
+        %tmp.5 = eq %tmp.3 %tmp.4;
+        bf %tmp.5 @_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_8_8_14_8_if_false;
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_8_8_14_8_if_true:
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_8_26_10_8_start:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 9 12 ]
+        symbol [ WaterType %tmp.7 9 24 33 ];
+        %tmp.7 = getv ? :WaterType;
+        symbol [ Hot %tmp.8 9 34 37 ];
+        %tmp.8 = getv %tmp.7 :Hot;
+        lputv %waterType.1 %tmp.8;
+        symbol [ waterType %waterType.1 9 12 21 ];
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_8_26_10_8_stop:
+        goto @_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_8_8_14_8_if_end;
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_8_8_14_8_if_false:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 10 15 ]
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_10_15_14_8_if_stmt:
+        %tmp.9 = lgetv %index;
+        symbol [ index %tmp.9 10 19 24 ];
+        %tmp.10 = 2;
+        %tmp.11 = mod %tmp.9 %tmp.10;
+        %tmp.12 = 0;
+        %tmp.13 = eq %tmp.11 %tmp.12;
+        bf %tmp.13 @_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_10_15_14_8_if_else_false;
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_10_15_14_8_if_true:
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_10_32_12_8_start:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 11 12 ]
+        symbol [ WaterType %tmp.15 11 24 33 ];
+        %tmp.15 = getv ? :WaterType;
+        symbol [ Cold %tmp.16 11 34 38 ];
+        %tmp.16 = getv %tmp.15 :Cold;
+        lputv %waterType.1 %tmp.16;
+        symbol [ waterType %waterType.1 11 12 21 ];
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_10_32_12_8_stop:
+        goto @_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_10_15_14_8_if_end;
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_10_15_14_8_if_else_false:
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_12_15_14_8_start:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 13 12 ]
+        symbol [ WaterType %tmp.18 13 24 33 ];
+        %tmp.18 = getv ? :WaterType;
+        symbol [ Switch %tmp.19 13 34 40 ];
+        %tmp.19 = getv %tmp.18 :Switch;
+        lputv %waterType.1 %tmp.19;
+        symbol [ waterType %waterType.1 13 12 21 ];
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_12_15_14_8_stop:
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_10_15_14_8_if_end:
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_8_8_14_8_if_end:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 16 8 ]
+        [ "_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_6_43_19_4_start" "_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_6_43_19_4_stop" ]
+        %duration.2 = local;
+        symbol [ duration %duration.2 16 12 20 ];
+        %tmp.20 = self;
+        symbol [ getCycleDuration %tmp.21 16 23 39 ];
+        %tmp.21 = getv function %tmp.20 :getCycleDuration;
+        %tmp.22 = lgetv %waterType.1;
+        symbol [ waterType %tmp.22 16 40 49 ];
+        %tmp.23 = invoke %tmp.20 %tmp.21(%tmp.22);
+        lputv %duration.2 %tmp.23;
+        symbol [ duration %duration.2 16 12 20 ];
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 17 8 ]
+        symbol [ WaterCycle %tmp.27 17 19 29 ];
+        %tmp.27 = getv ? :WaterCycle;
+        %tmp.28 = lgetv %waterType.1;
+        symbol [ waterType %tmp.28 17 30 39 ];
+        %tmp.29 = lgetv %duration.2;
+        symbol [ duration %tmp.29 17 41 49 ];
+        %tmp.24 = newc %tmp.27 (%tmp.28, %tmp.29);
+        ret %tmp.24;
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_6_43_19_4_stop:
+    }
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc"; @line = 20; @symbol_functiondef = [getCycleDuration,20,20,36]; @symbol_param<0> = [waterType,20,37,46]; ]
+    static
+    function getCycleDuration(waterType) {
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_20_47_23_4_start:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 21 12 ]
+        [ "_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_20_47_23_4_start" "_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_20_47_23_4_stop" ]
+        %key.1 = local;
+        symbol [ key %key.1 21 16 19 ];
+        %tmp.1 = self;
+        symbol [ getWaterDurationKey %tmp.2 21 22 41 ];
+        %tmp.2 = getv function %tmp.1 :getWaterDurationKey;
+        %tmp.3 = lgetv %waterType;
+        symbol [ waterType %tmp.3 21 42 51 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %key.1 %tmp.4;
+        symbol [ key %key.1 21 16 19 ];
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 22 12 ]
+        symbol [ Application %tmp.5 22 19 30 ];
+        %tmp.5 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.6 22 31 41 ];
+        %tmp.6 = getv %tmp.5 :Properties;
+        symbol [ getValue %tmp.7 22 42 50 ];
+        %tmp.7 = getv function %tmp.6 :getValue;
+        %tmp.8 = lgetv %key.1;
+        symbol [ key %tmp.8 22 51 54 ];
+        %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
+        ret %tmp.9;
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_20_47_23_4_stop:
+    }
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc"; @line = 25; @symbol_functiondef = [setCycleDuration,25,20,36]; @symbol_param<0> = [waterType,25,37,46]; @symbol_param<1> = [duration,25,48,56]; ]
+    static
+    function setCycleDuration(waterType, duration) {
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_25_58_29_4_start:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 26 8 ]
+        [ "_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_25_58_29_4_start" "_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_25_58_29_4_stop" ]
+        %key.1 = local;
+        symbol [ key %key.1 26 12 15 ];
+        %tmp.1 = self;
+        symbol [ getWaterDurationKey %tmp.2 26 18 37 ];
+        %tmp.2 = getv function %tmp.1 :getWaterDurationKey;
+        %tmp.3 = lgetv %waterType;
+        symbol [ waterType %tmp.3 26 38 47 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %key.1 %tmp.4;
+        symbol [ key %key.1 26 12 15 ];
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 27 8 ]
+        symbol [ Application %tmp.5 27 8 19 ];
+        %tmp.5 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.6 27 20 30 ];
+        %tmp.6 = getv %tmp.5 :Properties;
+        symbol [ setValue %tmp.7 27 31 39 ];
+        %tmp.7 = getv function %tmp.6 :setValue;
+        %tmp.8 = lgetv %key.1;
+        symbol [ key %tmp.8 27 40 43 ];
+        %tmp.9 = lgetv %duration;
+        symbol [ duration %tmp.9 27 45 53 ];
+        invoke %tmp.6 %tmp.7(%tmp.8, %tmp.9);
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_25_58_29_4_stop:
+    }
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc"; @line = 31; @symbol_functiondef = [getCyclesCount,31,20,34]; ]
+    static
+    function getCyclesCount() {
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_31_37_33_4_start:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 32 8 ]
+        symbol [ Application %tmp.1 32 15 26 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 32 27 37 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ getValue %tmp.3 32 38 46 ];
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "cylesCount";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        ret %tmp.5;
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_31_37_33_4_stop:
+    }
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc"; @line = 35; @symbol_functiondef = [setCyclesCount,35,20,34]; @symbol_param<0> = [count,35,35,40]; ]
+    static
+    function setCyclesCount(count) {
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_35_42_37_4_start:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 36 8 ]
+        symbol [ Application %tmp.1 36 8 19 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 36 20 30 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ setValue %tmp.3 36 31 39 ];
+        %tmp.3 = getv function %tmp.2 :setValue;
+        %tmp.4 = "cyclesCount";
+        %tmp.5 = lgetv %count;
+        symbol [ count %tmp.5 36 55 60 ];
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.5);
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_35_42_37_4_stop:
+    }
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc"; @line = 39; @symbol_functiondef = [getWaterDurationKey,39,20,39]; @symbol_param<0> = [waterType,39,40,49]; ]
+    static
+    function getWaterDurationKey(waterType) {
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_39_51_48_4_start:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 40 8 ]
+        %tmp.1 = lgetv %waterType;
+        symbol [ waterType %tmp.1 40 15 24 ];
+        push %tmp.1;
+        switch %tmp.1 @_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_40_8_47_8_switchStmtEnd;
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_40_8_47_8_switchStmtBegin:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 41 12 ]
+        %tmp.2 = dup %tmp.1;
+        symbol [ WaterType %tmp.4 41 17 26 ];
+        %tmp.4 = getv ? :WaterType;
+        symbol [ Hot %tmp.5 41 27 30 ];
+        %tmp.5 = getv %tmp.4 :Hot;
+        %tmp.6 = getv function %tmp.2 :equals;
+        %tmp.7 = invoke %tmp.2 %tmp.6 (%tmp.5);
+        bt %tmp.7 @_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_41_12_42_36_switchCase;
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 43 12 ]
+        %tmp.8 = dup %tmp.1;
+        symbol [ WaterType %tmp.10 43 17 26 ];
+        %tmp.10 = getv ? :WaterType;
+        symbol [ Cold %tmp.11 43 27 31 ];
+        %tmp.11 = getv %tmp.10 :Cold;
+        %tmp.12 = getv function %tmp.8 :equals;
+        %tmp.13 = invoke %tmp.8 %tmp.12 (%tmp.11);
+        bt %tmp.13 @_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_43_12_44_37_switchCase;
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 45 12 ]
+        %tmp.14 = dup %tmp.1;
+        symbol [ WaterType %tmp.16 45 17 26 ];
+        %tmp.16 = getv ? :WaterType;
+        symbol [ Switch %tmp.17 45 27 33 ];
+        %tmp.17 = getv %tmp.16 :Switch;
+        %tmp.18 = getv function %tmp.14 :equals;
+        %tmp.19 = invoke %tmp.14 %tmp.18 (%tmp.17);
+        bt %tmp.19 @_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_45_12_46_39_switchCase;
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_40_8_47_8_switchStmtDefault:
+        goto @_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_40_8_47_8_defaultCodeBegin;
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_41_12_42_36_switchCase:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 42 16 ]
+        %tmp.20 = "hotDuration";
+        ret %tmp.20;
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_43_12_44_37_switchCase:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 44 16 ]
+        %tmp.21 = "coldDuration";
+        ret %tmp.21;
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_45_12_46_39_switchCase:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 46 16 ]
+        %tmp.22 = "switchDuration";
+        ret %tmp.22;
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_40_8_47_8_defaultCodeBegin:
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_40_8_47_8_switchStmtEnd:
+        pop;
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_39_51_48_4_stop:
+    }
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc"; @line = 50; @symbol_functiondef = [getUseDoubleClickFlag,50,20,41]; ]
+    static
+    function getUseDoubleClickFlag() {
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_50_44_52_4_start:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 51 8 ]
+        symbol [ Application %tmp.1 51 15 26 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 51 27 37 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ getValue %tmp.3 51 38 46 ];
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "useDoubleClick";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        ret %tmp.5;
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_50_44_52_4_stop:
+    }
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc"; @line = 54; @symbol_functiondef = [setUseDoubleClickFlag,54,20,41]; @symbol_param<0> = [value,54,42,47]; ]
+    static
+    function setUseDoubleClickFlag(value) {
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_54_49_56_4_start:
+[ "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc" 55 8 ]
+        symbol [ Application %tmp.1 55 8 19 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 55 20 30 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ setValue %tmp.3 55 31 39 ];
+        %tmp.3 = getv function %tmp.2 :setValue;
+        %tmp.4 = "useDoubleClick";
+        %tmp.5 = lgetv %value;
+        symbol [ value %tmp.5 55 58 63 ];
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.5);
+_Users_antoniodiez_Desktop_antonio_coding_Garmin_garmin_demo_source_managers_CyclesManager_mc_54_49_56_4_stop:
+    }
+}
+[ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/managers/CyclesManager.mc"; @line = 1; ]
+<init> {
+}

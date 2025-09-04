@@ -1,0 +1,23 @@
+[ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/enums/AttentionLevel.mc"; @line = 1; @symbol_classdef = [AttentionLevel,1,6,20]; ]
+class AttentionLevel {
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/enums/AttentionLevel.mc"; @line = 1; ]
+    <init> {
+    }
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/enums/AttentionLevel.mc"; @line = 1; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/enums/AttentionLevel.mc"; @line = 2; ]
+    static
+    enum {
+        [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/enums/AttentionLevel.mc"; @line = 3; @position = 8; @symbol_enumdec = [Low,3,8,11]; ]
+        Low,
+        [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/enums/AttentionLevel.mc"; @line = 4; @position = 8; @symbol_enumdec = [Medium,4,8,14]; ]
+        Medium,
+        [ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/enums/AttentionLevel.mc"; @line = 5; @position = 8; @symbol_enumdec = [High,5,8,12]; ]
+        High
+    }
+}
+[ @file = "/Users/antoniodiez/Desktop/antonio/coding/Garmin/garmin-demo/source/enums/AttentionLevel.mc"; @line = 1; ]
+<init> {
+}
